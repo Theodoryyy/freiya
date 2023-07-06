@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './comps/main-header/main-header.component';
 import { CarouselComponent } from './comps/carousel/carousel.component';
 import { ContentComponent } from './comps/content/content.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './comps/footer/footer.component';
+import { StreamingsComponent } from './comps/streamings/streamings.component';
+import { SobreComponent } from './comps/sobre/sobre.component';
+import { IntegrantesComponent } from './comps/integrantes/integrantes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { FooterComponent } from './footer/footer.component';
     MainHeaderComponent,
     CarouselComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    StreamingsComponent,
+    SobreComponent,
+    IntegrantesComponent
   ],
   imports: [
     BrowserModule,
