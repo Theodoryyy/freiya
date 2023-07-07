@@ -117,5 +117,8 @@
       }
     }
   },
-  "defaultProject": "freiya"
+  "defaultProject": "freiya",
+  "cli": {
+    "analytics": "bca5f678-c3f7-45cf-955e-ee47efc6a21f"
+  }
 }
