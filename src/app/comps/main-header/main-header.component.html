@@ -1,37 +1,49 @@
 <header class="navbar navbar-expand-md bg-success" style="min-height: 3rem;">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars text-white"></span>
-    </button>
-    <a class="navbar-brand" href="#">
-        <img src="../assets/imgs/freiya.png" class="ms-2" style="height: 2rem;" alt="">
-    </a>
-    <div class="d-flex">
-        <a href="https://www.youtube.com/channel/UCfb85sGgSd-IkmjYSOi0mlA"
-            class="btn btn-success fa fa-youtube-play fs-4 me-2"></a>
-        <a href="https://open.spotify.com/artist/1TupoCnann2Vo520MVhBGr"
-            class="btn btn-success fa fa-spotify fs-4 me-2"></a>
-        <a href="https://music.apple.com/us/artist/freiya/1542679048" class="btn btn-success fa fa-apple fs-4"></a>
-    </div>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#" (click)="scrollToSection('secao1')">
-                        <img src="../../../assets/imgs/sobre.png" style="height: 20px;" alt="Sobre">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" (click)="scrollToSection('secao2')">
-                        <img src="../../../assets/imgs/Streaming.png" style="height: 21px;" alt="Streaming">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" (click)="scrollToSection('secao3')">
-                        <img src="../../../assets/imgs/integrantes.png" style="height: 21px;" alt="Integrantes">
-                    </a>
-                </li>
-            </ul>
+        <div>
+            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-white"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../assets/imgs/freiya.png" class="ms-2" style="height: 2rem;" alt="">
+            </a>
+            <img src="../../../assets/imgs/barra.png" class=" me-1" style="height: 20px;">
+        </div>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <div>
+                <ul class="navbar-nav  align-items-center">
+                    <li class="nav-item">
+                        <a [routerLink]="['/sobre']" class="nav-link" href="#" (click)="scrollToSection('secao1')">
+                            <img src="../../../assets/imgs/sobre.png" style="height: 20px;" alt="Sobre">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a [routerLink]="['/streaming']" class="nav-link" href="#" (click)="scrollToSection('secao2')">
+                            <img src="../../../assets/imgs/Streaming.png" style="height: 21px;" alt="Streaming">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a [routerLink]="['/integrantes']" class="nav-link" href="#"
+                            (click)="scrollToSection('secao3')">
+                            <img src="../../../assets/imgs/integrantes.png" style="height: 21px;" alt="Integrantes">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="justify-content-center">
+                        <a href="https://www.youtube.com/channel/UCfb85sGgSd-IkmjYSOi0mlA"
+                            class="btn btn-success fa fa-youtube-play fs-4 me-2"></a>
+                        <a href="https://open.spotify.com/artist/1TupoCnann2Vo520MVhBGr"
+                            class="btn btn-success fa fa-spotify fs-4 me-2"></a>
+                        <a href="https://music.apple.com/us/artist/freiya/1542679048"
+                            class="btn btn-success fa fa-apple fs-4"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
